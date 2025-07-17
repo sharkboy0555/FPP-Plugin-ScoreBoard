@@ -1,5 +1,8 @@
 #!/bin/bash
-pushd $(dirname $(which $0))
-target_PWD=$(readlink -f .)
-exec /opt/fpp/scripts/update_plugin ${target_PWD##*/}
-popd
+
+echo "Installing Scoreboard Plugin..."
+
+# Ensure permissions are correct
+chmod 755 -R ${FPPDIR}/plugins/FPP-Plugin-Scoreboard
+
+echo "Scoreboard plugin installed."
