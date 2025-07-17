@@ -1,0 +1,17 @@
+{
+  "Name": "ScoreBoard",
+  "Version": "1.0",
+  "Author": "LightsOnHudson",
+  "Description": "Scoreboard plugin for Falcon Player, displays customizable scoreboard overlays.",
+  "PluginUrl": "https://github.com/LightsOnHudson/FPP-Plugin-ScoreBoard",
+  "MinimumFPPVersion": "6.0",
+  "Platform": ["Pi", "BBB"],
+  "Menus": [
+    {
+      "Name": "Scoreboard Config",
+      "Type": "status",
+      "Page": "scoreboard.php",
+      "Wrap": 1
+    }
+  ]
+}
